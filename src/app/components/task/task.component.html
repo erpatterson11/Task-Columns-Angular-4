@@ -1,0 +1,6 @@
+<div class="task-container" *ngIf="task.column == column">
+  <div class="task-move-button" (click)="moveTask('<')" *ngIf="shouldShowButton(task.column, '<')"> < </div>
+  <div>{{task.task}}</div>
+  <div class="task-move-button" (click)="moveTask('>')" *ngIf="shouldShowButton(task.column, '>')"> > </div>
+  <div class="task-delete-button" (click)="deleteTask(task.id)">X</div>
+</div>

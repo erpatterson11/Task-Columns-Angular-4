@@ -1,0 +1,9 @@
+<div class="columns-container">
+  <app-column *ngFor="let column of columns" 
+    [tasks]="tasks"
+    [column]="column"
+    [columnLength]="columns.length"
+    [addTask]="addTask"
+    [deleteTask]="deleteTask">
+  </app-column>
+</div>

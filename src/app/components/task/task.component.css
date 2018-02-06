@@ -1,0 +1,19 @@
+.task-container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 30px;
+    margin: 5px 0;
+    background-color: rgb(220,220,220);
+}
+
+.task-move-button, .task-delete-button {
+    cursor: pointer;
+}
+
+.task-move-button:hover, .task-delete-button:hover {
+    font-weight: bold;
+}
+
